@@ -39,12 +39,12 @@ import type {
     return redirect("/movies/search?page=" + page + "&query=" + query);
   };
   
-  type LoaderData = {
-    email?: string;
-    userId?: string;
-    movies?: movieType[];
-    data: searchDataType;
-  };
+  // type LoaderData = {
+  //   email?: string;
+  //   userId?: string;
+  //   movies?: movieType[];
+  //   data: searchDataType;
+  // };
   
   type searchDataType = {
     page: number;
@@ -85,7 +85,7 @@ import type {
     // console.log(query);
     // console.log(page);
   
-    let { data } = useLoaderData() as LoaderData;
+    let { data } = useLoaderData<typeof loader>()
     // console.log(data);
     let movies;
     if (data !== null) {

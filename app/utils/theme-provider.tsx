@@ -16,7 +16,7 @@ const ThemeContext = React.createContext<ThemeContextType | undefined>(
   undefined
 );
 
-// ThemeContext.displayName = "ThemeContext";
+ThemeContext.displayName = "ThemeContext";
 
 const prefersLightMQ = "(prefers-color-scheme: light)";
 const getPreferredTheme = () =>

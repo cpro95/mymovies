@@ -17,10 +17,6 @@ import { getFormData, useFormInputProps } from "remix-params-helper";
 import { z } from "zod";
 import { Theme, useTheme } from "~/utils/theme-provider";
 
-type LoaderData = {
-  note: Note;
-};
-
 export const NewNoteFormSchema = z.object({
   title: z.string().min(2, "require-title"),
   body: z.string().min(1, "require-body"),
@@ -66,11 +62,11 @@ export const loader: LoaderFunction = async ({ request, params }) => {
   if (!note) {
     throw new Response("Not Found", { status: 404 });
   }
-  return json<LoaderData>({ note });
+  return json({ note });
 };
 
 export default function NewNotePage() {
-  const { note } = useLoaderData() as LoaderData;
+  const { note } = useLoaderData<typeof loader>();
   //   console.log(note);
 
   const actionData = useActionData() as ActionData;

@@ -71,7 +71,7 @@ export const action: ActionFunction = async ({ request, params }) => {
 
 export default function NoteDetailsPage() {
   const user = useOptionalUser();
-  const data = useLoaderData() as MyLoaderData;
+  const data = useLoaderData<typeof loader>();
   // console.log(data);
   // console.log("user ===>", user);
 
