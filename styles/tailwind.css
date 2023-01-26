@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .search-label {
+    @apply block w-full rounded-lg border border-gray-300 bg-dodger-50 p-2.5 pl-10 text-sm text-gray-900 focus:border-dodger-500 focus:ring-dodger-500  dark:border-gray-600 dark:bg-dodger-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-dodger-500 dark:focus:ring-dodger-500;
+  }
+  .search-button {
+    @apply rounded-lg border border-dodger-700 bg-dodger-700 p-2.5 text-sm font-medium text-white hover:bg-dodger-800 focus:outline-none focus:ring-4 focus:ring-dodger-300 dark:bg-dodger-600 dark:hover:bg-dodger-600 dark:focus:ring-dodger-800;
+  }
+  .btn-primary {
+    @apply rounded border border-dodger-700 bg-dodger-100 px-4 py-2 text-center text-sm font-medium text-dodger-700 hover:bg-dodger-800 hover:text-white focus:outline-none focus:ring-4 focus:ring-dodger-300 dark:border-dodger-500 dark:bg-dodger-800 dark:text-dodger-500 dark:hover:bg-dodger-600 dark:hover:text-white dark:focus:ring-dodger-800;
+  }
+  .btn-warning {
+    @apply rounded border border-dodger-700 bg-dodger-700 px-4 py-2 text-center text-sm font-medium text-dodger-300 hover:bg-dodger-600 hover:text-dodger-300 focus:outline-none focus:ring-4 focus:ring-dodger-300 dark:border-dodger-500 dark:bg-dodger-500 dark:text-dodger-900  dark:hover:bg-dodger-600 dark:hover:text-white dark:focus:ring-dodger-800;
+  }
+}
