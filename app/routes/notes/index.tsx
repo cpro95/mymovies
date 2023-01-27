@@ -16,7 +16,7 @@ export default function NoteIndexPage() {
 
   return (
     <div className="flex w-full flex-row items-center justify-between bg-dodger-50 dark:bg-dodger-900">
-      <div className="text-2xl font-semibold dark:text-gray-200">Notes 123</div>
+      <div className="text-2xl font-semibold dark:text-gray-200">Notes</div>
       <div className="dark:text-gray-200">Total {nbOfNotes}</div>
     </div>
   );
