@@ -7,7 +7,7 @@ export function DarkMode() {
     <button
       id="theme-toggle"
       type="button"
-      className="rounded-lg p-2.5 text-sm text-gray-500 hover:bg-dodger-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-dodger-700 dark:focus:ring-gray-700"
+      className="rounded-lg py-2.5 px-1 text-sm text-gray-500 hover:bg-dodger-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-dodger-700 dark:focus:ring-gray-700"
       onClick={() => {
         setTheme((previousTheme) =>
           previousTheme === Theme.DARK ? Theme.LIGHT : Theme.DARK

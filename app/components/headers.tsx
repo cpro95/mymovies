@@ -46,7 +46,7 @@ const SettingSVG = (
 
 function PlainMenu({ email }: { email: string | undefined }) {
   const menuItemStyle =
-    "text-md mx-1 rounded-lg p-2.5 text-gray-500 hover:bg-dodger-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-dodger-700 dark:focus:ring-gray-700";
+    "text-sm mx-1 rounded-lg py-2.5 px-1 text-gray-500 hover:bg-dodger-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-dodger-700 dark:focus:ring-gray-700";
 
   return (
     <div className="flex w-full items-center justify-between">
@@ -54,13 +54,13 @@ function PlainMenu({ email }: { email: string | undefined }) {
         <>
           <Link
             to="/chat"
-            className="mx-1 rounded-lg p-2.5 text-sm text-gray-500 hover:bg-dodger-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-dodger-700 dark:focus:ring-gray-700"
+            className="mx-1 rounded-lg py-2.5 px-1 text-sm text-gray-500 hover:bg-dodger-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-dodger-700 dark:focus:ring-gray-700"
           >
             Chat
           </Link>
           <Link
             to="/users"
-            className="mx-1 rounded-lg p-2.5 text-sm text-gray-500 hover:bg-dodger-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-dodger-700 dark:focus:ring-gray-700"
+            className="mx-1 rounded-lg py-2.5 px-1 text-sm text-gray-500 hover:bg-dodger-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-dodger-700 dark:focus:ring-gray-700"
           >
             {SettingSVG}
           </Link>
